@@ -14,6 +14,12 @@
 		AE31275B1AEDAD1700D438A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE31275A1AEDAD1700D438A4 /* Images.xcassets */; };
 		AE31275E1AEDAD1700D438A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE31275C1AEDAD1700D438A4 /* LaunchScreen.xib */; };
 		AE31276A1AEDAD1700D438A4 /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3127691AEDAD1700D438A4 /* StateMachineTests.swift */; };
+		AE3127751AEDAD9600D438A4 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3127741AEDAD9600D438A4 /* State.swift */; };
+		AE3127771AEDB39000D438A4 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3127761AEDB39000D438A4 /* StateMachine.swift */; };
+		AE31277B1AEDB4AB00D438A4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31277A1AEDB4AB00D438A4 /* Event.swift */; };
+		AE31277E1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31277D1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift */; };
+		AE3127801AEDBEA600D438A4 /* ViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31277F1AEDBEA600D438A4 /* ViewControllerState.swift */; };
+		AE3127831AEDC7B100D438A4 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3127821AEDC7B100D438A4 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		AE3127631AEDAD1700D438A4 /* StateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3127681AEDAD1700D438A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3127691AEDAD1700D438A4 /* StateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineTests.swift; sourceTree = "<group>"; };
+		AE3127741AEDAD9600D438A4 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		AE3127761AEDB39000D438A4 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		AE31277A1AEDB4AB00D438A4 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AE31277D1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerStateMachine.swift; sourceTree = "<group>"; };
+		AE31277F1AEDBEA600D438A4 /* ViewControllerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerState.swift; sourceTree = "<group>"; };
+		AE3127821AEDC7B100D438A4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,9 @@
 		AE31274D1AEDAD1700D438A4 /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				AE3127811AEDC79800D438A4 /* Extensions */,
+				AE31277C1AEDB5E100D438A4 /* Implementation */,
+				AE3127731AEDAD4C00D438A4 /* Protocols */,
 				AE3127501AEDAD1700D438A4 /* AppDelegate.swift */,
 				AE3127551AEDAD1700D438A4 /* ViewController.swift */,
 				AE3127571AEDAD1700D438A4 /* Main.storyboard */,
@@ -113,6 +128,33 @@
 				AE3127681AEDAD1700D438A4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE3127731AEDAD4C00D438A4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE3127741AEDAD9600D438A4 /* State.swift */,
+				AE3127761AEDB39000D438A4 /* StateMachine.swift */,
+				AE31277A1AEDB4AB00D438A4 /* Event.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		AE31277C1AEDB5E100D438A4 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				AE31277D1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift */,
+				AE31277F1AEDBEA600D438A4 /* ViewControllerState.swift */,
+			);
+			name = Implementation;
+			sourceTree = "<group>";
+		};
+		AE3127811AEDC79800D438A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE3127821AEDC7B100D438A4 /* UIViewExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +258,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3127561AEDAD1700D438A4 /* ViewController.swift in Sources */,
+				AE31277E1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift in Sources */,
+				AE3127751AEDAD9600D438A4 /* State.swift in Sources */,
 				AE3127511AEDAD1700D438A4 /* AppDelegate.swift in Sources */,
+				AE3127801AEDBEA600D438A4 /* ViewControllerState.swift in Sources */,
+				AE3127771AEDB39000D438A4 /* StateMachine.swift in Sources */,
+				AE31277B1AEDB4AB00D438A4 /* Event.swift in Sources */,
+				AE3127831AEDC7B100D438A4 /* UIViewExtensions.swift in Sources */,
 				AE3127541AEDAD1700D438A4 /* StateMachine.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
