@@ -20,6 +20,8 @@
 		AE31277E1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31277D1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift */; };
 		AE3127801AEDBEA600D438A4 /* ViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31277F1AEDBEA600D438A4 /* ViewControllerState.swift */; };
 		AE3127831AEDC7B100D438A4 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3127821AEDC7B100D438A4 /* UIViewExtensions.swift */; };
+		AEFB5D511AEDE2B90015D858 /* BaseStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB5D501AEDE2B90015D858 /* BaseStateViewController.swift */; };
+		AEFB5D541AEDF4290015D858 /* EventEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB5D531AEDF4290015D858 /* EventEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		AE31277D1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerStateMachine.swift; sourceTree = "<group>"; };
 		AE31277F1AEDBEA600D438A4 /* ViewControllerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerState.swift; sourceTree = "<group>"; };
 		AE3127821AEDC7B100D438A4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		AEFB5D501AEDE2B90015D858 /* BaseStateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStateViewController.swift; sourceTree = "<group>"; };
+		AEFB5D531AEDF4290015D858 /* EventEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		AE31274D1AEDAD1700D438A4 /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				AEFB5D521AEDF3F30015D858 /* Enums */,
 				AE3127811AEDC79800D438A4 /* Extensions */,
 				AE31277C1AEDB5E100D438A4 /* Implementation */,
 				AE3127731AEDAD4C00D438A4 /* Protocols */,
@@ -145,6 +150,7 @@
 			children = (
 				AE31277D1AEDB5FE00D438A4 /* ViewControllerStateMachine.swift */,
 				AE31277F1AEDBEA600D438A4 /* ViewControllerState.swift */,
+				AEFB5D501AEDE2B90015D858 /* BaseStateViewController.swift */,
 			);
 			name = Implementation;
 			sourceTree = "<group>";
@@ -155,6 +161,14 @@
 				AE3127821AEDC7B100D438A4 /* UIViewExtensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AEFB5D521AEDF3F30015D858 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AEFB5D531AEDF4290015D858 /* EventEnum.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +280,8 @@
 				AE31277B1AEDB4AB00D438A4 /* Event.swift in Sources */,
 				AE3127831AEDC7B100D438A4 /* UIViewExtensions.swift in Sources */,
 				AE3127541AEDAD1700D438A4 /* StateMachine.xcdatamodeld in Sources */,
+				AEFB5D541AEDF4290015D858 /* EventEnum.swift in Sources */,
+				AEFB5D511AEDE2B90015D858 /* BaseStateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +477,7 @@
 				AE31276F1AEDAD1700D438A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE3127701AEDAD1700D438A4 /* Build configuration list for PBXNativeTarget "StateMachineTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +486,7 @@
 				AE3127721AEDAD1700D438A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

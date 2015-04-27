@@ -10,10 +10,19 @@ import Foundation
 import UIKit
 
 class ViewControllerState: State {
+//MARK: - Properties
   var vc: UIViewController?
   var parentVC: UIViewController?
+  var nibName:String
 
+//MARK: - Initializers
+  init(nibName:String) {
+    self.nibName = nibName
+  }
+
+//MARK: - State protocol methods
   func enter() {
+    
     var view:UIView? = vc?.view
     var parentView:UIView? = parentVC?.view
 

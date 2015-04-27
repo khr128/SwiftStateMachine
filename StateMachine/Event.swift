@@ -9,5 +9,6 @@
 import Foundation
 
 protocol Event {
-  
+  var type:EventTypes {get}
+  init(type:EventTypes)
 }
