@@ -1,28 +1,15 @@
 //
-//  BaseStateViewController.swift
+//  GreenStateViewController.swift
 //  StateMachine
 //
-//  Created by khr on 4/26/15.
+//  Created by Dmitri Khrebtukov on 5/14/15.
 //  Copyright (c) 2015 khr. All rights reserved.
 //
 
 import UIKit
 
-class BaseStateViewController: UIViewController {
-//MARK: - Properties
-  var stateMachine:ViewControllerStateMachine?
+class GreenStateViewController: BaseStateViewController {
 
-//MARK: - Initializers
-  init(stateMachine:ViewControllerStateMachine, nibName:String) {
-    self.stateMachine = stateMachine
-    super.init(nibName:nibName, bundle:nil)
-  }
-
-  required init(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-  }
-
-//MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,9 +22,8 @@ class BaseStateViewController: UIViewController {
     }
     
 
-//MARK: - Navigation
-
     /*
+    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

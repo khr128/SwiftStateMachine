@@ -16,13 +16,14 @@ class ViewControllerState: State {
   var nibName:String
 
 //MARK: - Initializers
-  init(nibName:String) {
+  init(stateMachine: ViewControllerStateMachine, nibName:String, parentViewController:UIViewController) {
     self.nibName = nibName
+    self.parentVC = parentViewController
+    self.vc = BaseStateViewController(stateMachine: stateMachine, nibName: nibName);    
   }
 
 //MARK: - State protocol methods
   func enter() {
-    
     var view:UIView? = vc?.view
     var parentView:UIView? = parentVC?.view
 
